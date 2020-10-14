@@ -1,0 +1,42 @@
+body {
+    background-color: #0077ff;
+}
+
+.container {
+    background-color: #fff000;
+}
+
+nav {
+    z-index: 1;
+    overflow: hidden;
+    max-width: 100%;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    float: sticky;
+    background-color: transparent;
+    padding: 2% 5% 2% 5%;
+}
+
+nav button {
+    display: block;
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    border: 5px;
+    border-radius: 10px;
+    border-color: white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+nav button:hover {
+    /* background: rgba(255, 255, 255, 0.5); */
+    
+}
+
+.section1 img {
+    width: 100%;
+}
