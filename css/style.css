@@ -13,7 +13,6 @@ nav {
     top: 0;
     position: sticky;
     position: -webkit-sticky;
-    float: sticky;
     background-color: transparent;
     padding: 2% 5% 2% 5%;
 }
@@ -25,16 +24,26 @@ nav button {
     padding: 15px 15px;
     text-align: center;
     text-decoration: none;
-    border: 5px;
+    border: solid;
+    border-color: transparent;
     border-radius: 10px;
-    border-color: white;
     display: inline-block;
-    cursor: pointer;
+    transition: 0.3s;
 }
 
 nav button:hover {
     /* background: rgba(255, 255, 255, 0.5); */
-    
+    border: solid;
+    border-color: white;
+    cursor: crosshair;
+}
+
+.leftnavbtn {
+    float: left;
+}
+
+.rightnavbtn {
+    float: right;
 }
 
 .section1 img {
