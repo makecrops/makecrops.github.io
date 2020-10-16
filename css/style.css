@@ -5,7 +5,8 @@ html {
 body {
     background-color: #0077ff;
     background-image: url("../img/protosample/bg.jpg");
-    width: 100%;
+    background-size: cover;
+    /* width: 100%; */
 }
 
 .container {
@@ -109,16 +110,6 @@ nav button:active {
     transition: margin-left 0.5s;
 }
 
-@media screen and (max-width: 500px) {
-    .sidebar {
-        display: none;
-    }
-
-    .burgericon {
-        display: none;
-    }
-}
-
 .column {
     float: left;
     width: 33.33%;
@@ -133,9 +124,22 @@ nav button:active {
     clear: both;
 }
 
+/* Responsive */
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        display: none;
+
+    }
+
+    .burgericon {
+        display: none;
+    }
+}
+
 /* Content area */
 
-.section1 {
+.intro {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -146,9 +150,10 @@ nav button:active {
     text-align: center;
 }
 
-.section2 {
-    height: 30vh;
+.details {
+    height: 40vh;
     width: 100%;
+    overflow: hidden;
     padding: 50px 100px 50px 100px;
     background: white;
 }
