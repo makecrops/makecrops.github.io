@@ -1,5 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #0077ff;
+    background-image: url("../img/protosample/bg.jpg");
+    width: 100%;
 }
 
 .container {
@@ -18,7 +24,6 @@ nav {
 }
 
 nav button {
-    display: block;
     background-color: transparent;
     color: #fff;
     padding: 15px 15px;
@@ -32,20 +37,122 @@ nav button {
 }
 
 nav button:hover {
-    /* background: rgba(255, 255, 255, 0.5); */
     border: solid;
     border-color: white;
     cursor: crosshair;
 }
 
+nav button:active {
+    background: rgba(255, 255, 255, 0.5);
+    /* color: black; */
+}
+
+.logo {
+    vertical-align: middle;
+    display: inline-block;
+    width: 100px;
+    list-style: none;
+}
+
 .leftnavbtn {
     float: left;
+    margin-right: 25px;
 }
 
 .rightnavbtn {
     float: right;
+    margin-left: 25px;
 }
 
-.section1 img {
+.burgericon {
+    height: 58px;
+    width: 58px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: #00022e;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.5s;
+}
+
+.sidebar a:hover {
+    background-color: #3A5F0B;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background: transparent !important;
+
+}
+
+#collapse {
+    transition: margin-left 0.5s;
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        display: none;
+    }
+
+    .burgericon {
+        display: none;
+    }
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content area */
+
+.section1 {
+    height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(80, 80, 80, 0.5);
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+.section2 {
+    height: 30vh;
+    width: 100%;
+    padding: 50px 100px 50px 100px;
+    background: white;
+}
+
+.details img {
+    width: 50px
 }

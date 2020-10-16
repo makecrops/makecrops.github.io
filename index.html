@@ -1,6 +1,6 @@
 <!--/*  makecrops.github.io
 
-        GR.10 Project in TLE, Computer and Statistics
+        Project in TLE, Computer and Statistics
 
         Developed by TheBlu */-->
 
@@ -16,7 +16,7 @@
     <script src="includes/jquery/jquery-3.5.1.js"></script>
 
     <!-- W3.CSS -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
     <!-- Bootstrap-->
 
@@ -34,28 +34,79 @@
     <title>Make Crops</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.png" />
+    <link rel="icon" href="img/protosample/favicon.png" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Scripts -->
+    <!-- <script>$(document).ready(function () {
+            // Handler for .ready() called.
+            $('html, body').animate({
+                scrollTop: $('#intro').offset().top
+            }, 'slow');
+        });
+    </script> -->
 </head>
 
 <body>
-    <nav>
+    <div id="contentSidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+        <a href="#intro">Intro</a>
+        <a href="#details">Details</a>
+        <a href="#">Progress</a>
+        <a href="#">Footer</a>
+    </div>
+
+    <nav id="nav">
+        <button name="btnSidebar" type="button" class="leftnavbtn burgericon" onclick="openSideNav()">
+            &#9776;
+        </button>
         <button name="btnHome" type="button" class="leftnavbtn">Home</button>
         <button name="btnPlants" type="button" class="leftnavbtn">Plants</button>
+        <!-- <img src="img/protosample/favicon.png" alt="test" class="logo"></img> -->
         <button name="btnAbout" type="button" class="rightnavbtn">About</button>
-        <button name="btnAbout" type="button" class="rightnavbtn">Contact</button>
     </nav>
 
-    <main>
-        <section class="section1">
-            <img src="img/protosample/bg.jpg" alt="Tree" />
+    <main id="main">
+        <section class="section1 intro" id="intro">
+            <h1>Lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </section>
-        <section>
-
+        <section class="section2 details" id="details">
+            <div class="row">
+                <div class="column">
+                    <img src="img/protosample/favicon.png" alt="test" class="logo"></img>
+                    <h1>Lorem ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="column">
+                    <img src="img/protosample/favicon.png" alt="test" class="logo"></img>
+                    <h1>Lorem ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="column">
+                    <img src="img/protosample/favicon.png" alt="test" class="logo"></img>
+                    <h1>Lorem ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
         </section>
     </main>
+
+    <script>
+        function openSideNav() {
+            document.getElementById("contentSidebar").style.width = "250px";
+            document.getElementById("nav").style.marginLeft = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeSideNav() {
+            document.getElementById("contentSidebar").style.width = "0";
+            document.getElementById("nav").style.marginLeft = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 </body>
 
 </html>
