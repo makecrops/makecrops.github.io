@@ -32,7 +32,7 @@ nav button {
     text-decoration: none;
     border: solid;
     border-color: transparent;
-    border-radius: 10px;
+    
     display: inline-block;
     transition: 0.3s;
 }
@@ -58,11 +58,13 @@ nav button:active {
 .leftnavbtn {
     float: left;
     margin-right: 25px;
+    border-radius: 25px 0px;
 }
 
 .rightnavbtn {
     float: right;
     margin-left: 25px;
+    border-radius: 0px 25px;
 }
 
 .burgericon {

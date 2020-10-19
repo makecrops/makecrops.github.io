@@ -52,7 +52,7 @@
 
 <body>
     <div id="contentSidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a> -->
         <a href="#intro">Intro</a>
         <a href="#details">Details</a>
         <a href="#">Progress</a>
@@ -60,7 +60,7 @@
     </div>
 
     <nav id="nav">
-        <button name="btnSidebar" type="button" class="leftnavbtn burgericon" onclick="openSideNav()">
+        <button name="btnSidebar" type="button" class="leftnavbtn burgericon" value="open" id="sidebario" onclick="onoff()">
             &#9776;
         </button>
         <button name="btnHome" type="button" class="leftnavbtn">Home</button>
@@ -106,6 +106,17 @@
             document.getElementById("contentSidebar").style.width = "0";
             document.getElementById("nav").style.marginLeft = "0";
             document.getElementById("main").style.marginLeft = "0";
+        }
+
+        function onoff() {
+            currentvalue = document.getElementById('sidebario').value;
+            if (currentvalue == "open") {
+                document.getElementById("sidebario").value = "close";
+                openSideNav();
+            } else {
+                document.getElementById("sidebario").value = "open";
+                closeSideNav();
+            }
         }
     </script>
 </body>
