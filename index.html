@@ -12,6 +12,7 @@
 
     <!-- includes -->
 
+
     <!-- JQuery -->
     <script src="includes/jquery/jquery-3.5.1.js"></script>
 
@@ -28,7 +29,10 @@
     <!-- Popper -->
     <script src="includes/popper.min.js"></script>
 
+
+
     <!-- misc -->
+
 
     <!-- Title -->
     <title>Make Crops</title>
@@ -39,7 +43,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
+
+
     <!-- Scripts -->
+
+
+    <!-- Start at id="intro" -->
     <script>
         $(document).ready(function () {
             // Handler for .ready() called.
@@ -56,7 +65,7 @@
         <a href="#intro">Intro</a>
         <a href="#details">Details</a>
         <a href="#progress">Progress</a>
-        <a href="#">Footer</a>
+        <a href="#footer">Footer</a>
     </div>
 
     <nav id="nav">
@@ -107,8 +116,29 @@
             </div>
 
         </section>
+        <footer id="footer">
+            <div class="row">
+                <div class="threecolumn">
+                    <h3>Links</h3>
+                    <a href="index.html">Home</a><br>
+                    <a href="plants.html">Plants</a><br>
+                    <a href="learn.html">Learn</a><br>
+                    <a href="about.html">About us</a><br>
+                </div>
+            </div>
+            <div class="copyright">
+                <!-- <p>2020 (c) IMG</p> -->
+            </div>
+        </footer>
     </main>
-
+    <div class="topbtn">
+        <button id="returnTop"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-compact-up"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z" />
+            </svg>
+        </button>
+    </div>
     <script>
         function openSideNav() {
             document.getElementById("contentSidebar").style.width = "250px";
@@ -132,6 +162,28 @@
                 closeSideNav();
             }
         }
+    </script>
+    <script>
+        window.onscroll = function () {
+            scrollFunction();
+        }
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("returnTop").style.display = "block";
+                $("#returnTop").fadeIn(1000);
+            } else {
+                document.getElementById("returnTop").style.display = "none";
+                $("#returnTop").fadeOut(1000);
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        $("#returnTop").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#intro").offset().top
+            });
+        });
     </script>
 </body>
 

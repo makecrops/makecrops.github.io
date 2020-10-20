@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #0077ff;
+    /* background-color: #0077ff; */
     background-image: url("../img/protosample/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,21 +12,22 @@ body {
     /* width: 100%; */
 }
 
-.container {
+/* .container {
     background-color: #fff000;
-}
+} */
 
 /* nav */
 
 nav {
     z-index: 1;
     overflow: hidden;
+    width: 100%;
     max-width: 100%;
     top: 0;
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
+    /* position: -webkit-sticky; */
     background-color: rgba(30, 30, 30, 0.2);
-    padding: 2% 5% 2% 5%;
+    padding: 2% 5%;
 }
 
 nav button {
@@ -105,6 +106,34 @@ nav button:active {
     background-color: #3A5F0B;
 }
 
+/* Return on top */
+
+#returnTop {
+    height: 40px;
+    width: 40px;
+    bottom: 30px;
+    right: 30px;
+
+    display: none;
+    position: fixed;
+    z-index: 99;
+
+    border: none;
+    border-radius: 100%;
+    outline: none;
+
+    color: rgb(255, 255, 255);
+    background-color: rgba(60, 100, 10, 0.5);
+
+    transition: 0.3s;
+}
+
+#returnTop:hover {
+    color: white;
+    background: rgb(60, 100, 10);
+    transition: 0.3s;
+}
+
 .closebtn {
     position: absolute;
     top: 0;
@@ -130,7 +159,7 @@ nav button:active {
     float: left;
     width: 33.33%;
     padding: 10px;
-    text-align: center;
+
 }
 
 /* Clear floats after the columns */
@@ -160,18 +189,22 @@ nav button:active {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: rgba(80, 80, 80, 0.5);
-    color: white;
     justify-content: center;
     text-align: center;
+    background: rgba(80, 80, 80, 0.5);
+    color: white;
 }
 
 .details {
     height: 40vh;
     width: 100%;
     overflow: hidden;
-    padding: 50px 100px 50px 100px;
+    padding: 50px 100px;
     background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
 }
 
 .details img {
@@ -187,4 +220,22 @@ nav button:active {
     color: white;
     justify-content: center;
     text-align: center;
+}
+
+footer {
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    padding: 50px 100px;
+    background: rgb(0, 0, 0);
+    text-align: left !important;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
 }
