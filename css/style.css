@@ -222,6 +222,10 @@ nav button:active {
     text-align: center;
 }
 
+.progress img {
+    border-radius: 10%;
+}
+
 footer {
     height: 50vh;
     width: 100%;
