@@ -103,7 +103,21 @@ nav button:active {
 }
 
 .sidebar a:hover {
-    background-color: #3A5F0B;
+    background-color: rgb(60, 100, 10);
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background: transparent !important;
+
+}
+
+#collapse {
+    transition: margin-left 0.5s;
 }
 
 /* Return on top */
@@ -134,20 +148,6 @@ nav button:active {
     transition: 0.3s;
 }
 
-.closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    background: transparent !important;
-
-}
-
-#collapse {
-    transition: margin-left 0.5s;
-}
-
 /* Columns */
 
 .bicolumn {
@@ -167,6 +167,29 @@ nav button:active {
     content: "";
     display: table;
     clear: both;
+}
+
+/* Horizontal Rule Styles */
+
+/* Dashed border */
+hr.dashed {
+    border-top: 2pt dashed white;
+}
+
+/* Dotted border */
+hr.dotted {
+    border-top: 2pt dotted white;
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 2pt solid white;
+}
+
+/* Rounded border */
+hr.rounded {
+    border-top: 2pt solid white;
+    border-radius: 10%;
 }
 
 /* Responsive */
@@ -203,7 +226,7 @@ nav button:active {
     background: white;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     text-align: center;
 }
 
@@ -234,6 +257,14 @@ footer {
     padding: 50px 100px;
     background: rgb(0, 0, 0);
     text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+footer img {
+    width: 50px;
 }
 
 footer a {
@@ -241,5 +272,18 @@ footer a {
 }
 
 footer a:hover {
-    color: white;
+    color: rgb(100, 175, 10);
+}
+
+footer a:active {
+    color:  rgb(75, 125, 10);
+}
+
+.socialLinks img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.footerColumnDivider {
+    border-right: 2pt solid white;
 }
