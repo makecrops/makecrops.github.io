@@ -6,12 +6,17 @@ body {
     background-color: #0077ff;
     background-image: url("../img/protosample/bg.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
     /* width: 100%; */
 }
 
 .container {
     background-color: #fff000;
 }
+
+/* nav */
 
 nav {
     z-index: 1;
@@ -20,7 +25,7 @@ nav {
     top: 0;
     position: sticky;
     position: -webkit-sticky;
-    background-color: transparent;
+    background-color: rgba(30, 30, 30, 0.2);
     padding: 2% 5% 2% 5%;
 }
 
@@ -32,7 +37,7 @@ nav button {
     text-decoration: none;
     border: solid;
     border-color: transparent;
-    
+
     display: inline-block;
     transition: 0.3s;
 }
@@ -71,6 +76,8 @@ nav button:active {
     height: 58px;
     width: 58px;
 }
+
+/* Sidebar */
 
 .sidebar {
     height: 100%;
@@ -112,7 +119,14 @@ nav button:active {
     transition: margin-left 0.5s;
 }
 
-.column {
+/* Columns */
+
+.bicolumn {
+    float: left;
+    width: 50%;
+}
+
+.threecolumn {
     float: left;
     width: 33.33%;
     padding: 10px;
@@ -162,4 +176,15 @@ nav button:active {
 
 .details img {
     width: 50px
+}
+
+.progress {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(80, 80, 80, 0.5);
+    color: white;
+    justify-content: center;
+    text-align: center;
 }
