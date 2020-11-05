@@ -1,0 +1,47 @@
+/* Navigation Bar design forked from W3Schools by LordGumball20 */
+
+/* Sidebar */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: #00022e;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar h1 {
+    font-size: 2rem;
+}
+
+.sidebar a, .sidebar h1 {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.5s;
+}
+
+.sidebar a:hover {
+    background-color: rgb(60, 100, 10);
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background: transparent !important;
+
+}
+
+#collapse {
+    transition: margin-left 0.5s;
+}

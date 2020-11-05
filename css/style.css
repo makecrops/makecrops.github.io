@@ -2,157 +2,16 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    /* background-color: #0077ff; */
-    background-image: url("../img/protosample/bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-attachment: fixed; */
-    /* width: 100%; */
-}
-
 /* .container {
     background-color: #fff000;
 } */
-
-/* nav */
-
-nav {
-    z-index: 1;
-    overflow: hidden;
-    width: 100%;
-    max-width: 100%;
-    top: 0;
-    position: fixed;
-    /* position: -webkit-sticky; */
-    background-color: rgba(30, 30, 30, 0.2);
-    padding: 2% 5%;
-}
-
-nav button {
-    background-color: transparent;
-    color: #fff;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    border: solid;
-    border-color: transparent;
-
-    display: inline-block;
-    transition: 0.3s;
-}
-
-nav button:hover {
-    border: solid;
-    border-color: white;
-    cursor: crosshair;
-}
-
-nav button:active {
-    background: rgba(255, 255, 255, 0.5);
-    /* color: black; */
-}
-
-.logo {
-    vertical-align: middle;
-    display: inline-block;
-    width: 100px;
-    list-style: none;
-}
-
-.leftnavbtn {
-    float: left;
-    margin-right: 25px;
-    border-radius: 25px 0px;
-}
-
-.rightnavbtn {
-    float: right;
-    margin-left: 25px;
-    border-radius: 0px 25px;
-}
-
-.burgericon {
-    height: 58px;
-    width: 58px;
-}
-
-/* Sidebar */
-
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    background: #00022e;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-}
-
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fff;
-    display: block;
-    transition: 0.5s;
-}
-
-.sidebar a:hover {
-    background-color: rgb(60, 100, 10);
-}
-
-.closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    background: transparent !important;
-
-}
-
-#collapse {
-    transition: margin-left 0.5s;
-}
-
-/* Return on top */
-
-#returnTop {
-    height: 40px;
-    width: 40px;
-    bottom: 30px;
-    right: 30px;
-
-    display: none;
-    position: fixed;
-    z-index: 99;
-
-    border: none;
-    border-radius: 100%;
-    outline: none;
-
-    color: rgb(255, 255, 255);
-    background-color: rgba(60, 100, 10, 0.5);
-
-    transition: 0.3s;
-}
-
-#returnTop:hover {
-    color: white;
-    background: rgb(60, 100, 10);
-    transition: 0.3s;
-}
 
 /* Columns */
 
 .bicolumn {
     float: left;
     width: 50%;
+    padding: 10px;
 }
 
 .threecolumn {
@@ -160,6 +19,11 @@ nav button:active {
     width: 33.33%;
     padding: 10px;
 
+}
+
+
+.row{
+    margin: 0;
 }
 
 /* Clear floats after the columns */
@@ -203,9 +67,25 @@ hr.rounded {
     .burgericon {
         display: none;
     }
+
+    footer {
+        height: 30vh;
+    }
 }
 
+/* Content Area */
+
 /* Content area */
+
+main a {
+    color: black;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: black;
+    text-decoration: underline;
+}
 
 .intro {
     height: 100vh;
@@ -218,43 +98,12 @@ hr.rounded {
     color: white;
 }
 
-.details {
-    height: 40vh;
-    width: 100%;
-    overflow: hidden;
-    padding: 50px 100px;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.details img {
-    width: 50px
-}
-
-.progress {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background: rgba(80, 80, 80, 0.5);
-    color: white;
-    justify-content: center;
-    text-align: center;
-}
-
-.progress img {
-    border-radius: 10%;
-}
-
 footer {
     height: 50vh;
     width: 100%;
     overflow: hidden;
     color: #fff;
-    padding: 50px 100px;
+    padding: 100px;
     background: rgb(0, 0, 0);
     text-align: left !important;
     display: flex;

@@ -1,0 +1,114 @@
+/* Plants Content Styles */
+
+/* Head */
+
+body {
+    /* background-color: #0077ff; */
+    background: url("../img/protosample/bg/bg1.jpg");
+    /* "Leaves" is under a Non-Commercial License of StockVault.net */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    /* width: 100%; */
+}
+
+/* 20/80 unequal column */
+
+.unequalcolumn {
+    float: left;
+}
+
+.unequalcolumnleft {
+    width: 20%;
+}
+
+.unequalcolumnright {
+    width: 80%;
+}
+
+/* Content area */
+
+.aboutPlants {
+    background: white;
+    overflow: hidden;
+    height: 30vh;
+    padding: 50px 100px;
+}
+
+.plantProgress {
+    background: white;
+    overflow: hidden;
+    height: 150vh;
+    padding: 50px 100px;
+}
+
+.plantContent {
+    height: 40vh;
+    width: 100%;
+    padding: 25px;
+    background: #008800;
+    overflow: hidden;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.plantBox {
+    height: 100%;
+    background: #005300;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.plantRow {
+    height: 100%;
+}
+
+.plantColumnStyle {
+    color: white;
+    height: 100%;
+    /* background:  #004000; */
+    border: none;
+    border-radius: 10px;
+}
+
+.plantImg {
+    height: 70%;
+    border: none;
+    border-radius: 10px;
+    margin: 2.5%;
+    text-align: center;
+    background:  #004000;
+}
+
+/* .plantImg img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+} */
+
+.plantTxT {
+    height: 20%;
+    border: none;
+    border-radius: 10px;
+    margin: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background:  #004000;
+}
+
+.plantTxT p {
+    margin: 0;
+}

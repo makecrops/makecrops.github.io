@@ -1,0 +1,29 @@
+/* Return on top styles and script by LordGumball20 */
+
+/* Return on top */
+
+#returnTop {
+    height: 40px;
+    width: 40px;
+    bottom: 30px;
+    right: 30px;
+
+    display: none;
+    position: fixed;
+    z-index: 99;
+
+    border: none;
+    border-radius: 100%;
+    outline: none;
+
+    color: rgb(255, 255, 255);
+    background-color: rgba(60, 100, 10, 0.5);
+
+    transition: 0.3s;
+}
+
+#returnTop:hover {
+    color: white;
+    background: rgb(60, 100, 10);
+    transition: 0.3s;
+}

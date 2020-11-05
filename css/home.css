@@ -1,0 +1,50 @@
+/* Home Content Styles */
+
+/* Head */
+
+body {
+    /* background-color: #0077ff; */
+    background: url("../img/protosample/bg/bg0.jpg");
+    /* "Spirit of Sadness" is under a Non-Commercial License of StockVault.net */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    /* width: 100%; */
+}
+
+/* Content area */
+
+.details {
+    height: 40vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 100px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.details img {
+    width: 50px;
+    vertical-align: middle;
+    display: inline-block;
+    list-style: none;
+}
+
+.progress {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(80, 80, 80, 0.5);
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+.progress img {
+    border-radius: 10%;
+}
