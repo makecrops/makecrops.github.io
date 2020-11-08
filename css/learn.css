@@ -1,4 +1,4 @@
-/* Plants Content Styles */
+/* Learn Content Styles */
 
 /* Head */
 
@@ -9,20 +9,66 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     /* width: 100%; */
 }
 
 .aboutTools {
     background: white;
     overflow: hidden;
-    height: 30vh;
+    height: auto;
     padding: 50px 100px;
+}
+
+.aboutTools h1 {
+    text-align: center;
+}
+
+.descTerms {
+    background: white;
+    overflow: hidden;
+    height: auto;
+    padding: 5px 100px 50px 100px;
+}
+
+.descTerms br{
+    display: block;
+    content: "";
+    margin-top: 20px;
+}
+
+.contentBreak {
+    background:rgba(0, 255, 149, 0.164);
+    overflow: hidden;
+    height: 20vh;
+    padding: 50px 100px;
+}
+
+.aboutHandTools {
+    background: white;
+    overflow: hidden;
+    height: auto;
+    padding: 50px 100px;
+}
+
+.aboutHandTools h3 {
+    text-align: center;
+}
+
+.aboutFarmEq {
+    background: white;
+    overflow: hidden;
+    height: auto;
+    padding: 50px 100px;
+}
+
+.aboutFarmEq h3 {
+    text-align: center;
 }
 
 .toolsContainer {
     background: white;
     overflow: hidden;
-    height: 100vh;
+    height: auto;
     padding: 50px 100px;
 }
