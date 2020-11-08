@@ -1,0 +1,28 @@
+/* Plants Content Styles */
+
+/* Head */
+
+body {
+    /* background-color: #0077ff; */
+    background: url("../img/protosample/bg/bg2.jpg");
+    /* "In the Rice Field" is under a  Creative Commons - CC0 License via StockVault.net */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    /* width: 100%; */
+}
+
+.aboutTools {
+    background: white;
+    overflow: hidden;
+    height: 30vh;
+    padding: 50px 100px;
+}
+
+.toolsContainer {
+    background: white;
+    overflow: hidden;
+    height: 100vh;
+    padding: 50px 100px;
+}

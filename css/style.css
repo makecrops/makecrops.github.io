@@ -6,33 +6,6 @@ html {
     background-color: #fff000;
 } */
 
-/* Columns */
-
-.bicolumn {
-    float: left;
-    width: 50%;
-    padding: 10px;
-}
-
-.threecolumn {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-
-}
-
-
-.row{
-    margin: 0;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 /* Horizontal Rule Styles */
 
 /* Dashed border */
@@ -73,8 +46,6 @@ hr.rounded {
     }
 }
 
-/* Content Area */
-
 /* Content area */
 
 main a {
@@ -96,43 +67,4 @@ main a:hover {
     text-align: center;
     background: rgba(80, 80, 80, 0.5);
     color: white;
-}
-
-footer {
-    height: 50vh;
-    width: 100%;
-    overflow: hidden;
-    color: #fff;
-    padding: 100px;
-    background: rgb(0, 0, 0);
-    text-align: left !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-footer img {
-    width: 50px;
-}
-
-footer a {
-    color: white;
-}
-
-footer a:hover {
-    color: rgb(100, 175, 10);
-}
-
-footer a:active {
-    color:  rgb(75, 125, 10);
-}
-
-.socialLinks img {
-    width: 50px;
-    border-radius: 100%;
-}
-
-.footerColumnDivider {
-    border-right: 2pt solid white;
 }

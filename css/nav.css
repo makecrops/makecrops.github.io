@@ -2,7 +2,7 @@
 
 /* nav */
 
-nav {
+#nav {
     z-index: 1;
     overflow: hidden;
     width: 100%;
@@ -10,11 +10,15 @@ nav {
     top: 0;
     position: fixed;
     /* position: -webkit-sticky; */
-    background-color: rgba(30, 30, 30, 0.2);
     padding: 2% 5%;
+    transition: 0.3s;
 }
 
-nav button {
+.mainNav {
+    height: 80px;
+}
+
+.navbtn {
     background-color: transparent;
     color: #fff;
     padding: 15px 15px;
@@ -27,13 +31,13 @@ nav button {
     transition: 0.3s;
 }
 
-nav button:hover {
+.navbtn:hover {
     border: solid;
     border-color: white;
     cursor: crosshair;
 }
 
-nav button:active {
+.navbtn:active {
     background: rgba(255, 255, 255, 0.5);
     /* color: black; */
 }
@@ -57,7 +61,51 @@ nav button:active {
     border-radius: 0px 25px;
 }
 
+.leftbtn {
+    float: left;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+
+.rightbtn {
+    float: right;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
 .burgericon {
     height: 58px;
     width: 58px;
+}
+
+.hidenav {
+    height: 10px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.hidenav button {
+    float: right;
+    margin-left: 25px;
+}
+
+#shownav {
+    display: none;
+}
+
+
+.showbtn {
+    background-color: rgba(30, 30, 30, 0.2);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: solid;
+    border-color: transparent;
+    border-radius: 0px !important;
+    display: inline-block;
+    transition: 0.3s;
+}
+.showbtn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    cursor: crosshair;
 }

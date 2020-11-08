@@ -1,0 +1,37 @@
+footer {
+    height: 50vh;
+    overflow: hidden;
+    color: #fff;
+    padding: 100px;
+    background: rgb(0, 0, 0);
+    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(100, 175, 10);
+}
+
+footer a:active {
+    color:  rgb(75, 125, 10);
+}
+
+.socialLinks img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.footerColumnDivider {
+    border-right: 2pt solid white;
+}

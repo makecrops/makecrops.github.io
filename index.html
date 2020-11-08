@@ -4,7 +4,7 @@
 
         Project in TLE, Computer and Statistics
 
-        Developed by TheBlu
+        Developed by TheBlu(lordgumball20) and aremis9
         
         Make Crops template by LordGumball20 is licensed
         under a Creative Commons Attribution-ShareAlike 4.0 International License   */-->
@@ -47,10 +47,12 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/columns.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="css/returnTop.css" />
     <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
 
 
@@ -78,26 +80,40 @@
     </div>
 
     <nav id="nav">
-        <div class="row">
-            <div class="threecolumn">
-                <button name="btnSidebar" type="button" class="leftnavbtn burgericon" value="open" id="sidebario"
-                    onclick="onoff()">
-                    &#9776;
-                </button>
-                <button name="btnHome" type="button" class="leftnavbtn"
-                    onclick="window.location.href='index.html';">Home</button>
-                <button name="btnPlants" type="button" class="leftnavbtn"
-                    onclick="window.location.href='plants.html';">Plants</button>
-                <button name="btnLearn" type="button" class="leftnavbtn"
-                    onclick="window.location.href='learn.html';">Learn</button>
+        <div class="mainNav" id="mainNav">
+            <div class="row">
+                <div class="bicolumn">
+                    <button name="btnSidebar" type="button" class="leftbtn burgericon navbtn" value="open"
+                        id="sidebario" onclick="onoff()">
+                        &#9776;
+                    </button>
+                </div>
+                <div class="bicolumn">
+                    <button name="btnHideNav" type="button" class="rightbtn navbtn" id="hideNav"
+                        onclick="hidemainNav()"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                            class="bi bi-chevron-compact-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z" />
+                        </svg></button>
+                    <button name="btnAbout" type="button" class="rightbtn navbtn"
+                        onclick="window.location.href='about.html';">About</button>
+                    <button name="btnPlants" type="button" class="rightbtn navbtn"
+                        onclick="window.location.href='plants.html';">Plants</button>
+                    <button name="btnLearn" type="button" class="rightbtn navbtn"
+                        onclick="window.location.href='learn.html';">Learn</button>
+                    <button name="btnHome" type="button" class="rightbtn navbtn"
+                        onclick="window.location.href='index.html';">Home</button>
+                </div>
             </div>
-            <div class="threecolumn">
-                <!-- <img src="img/protosample/favicon.png" alt="test" class="logo"></img> -->
-            </div>
-            <div class="threecolumn">
-                <button name="btnAbout" type="button" class="rightnavbtn"
-                    onclick="window.location.href='about.html';">About</button>
-            </div>
+        </div>
+        <div class="shownav" id="shownav">
+            <button name="btnShowNav" type="button" class="rightbtn showbtn" id="showNav" onclick="showmainNav()"><svg
+                    width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                </svg></button>
+        </div>
     </nav>
 
     <main id="main">
@@ -145,7 +161,9 @@
                     <a href="https://github.com/makecrops"><img
                             src="img/btn/social_media/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png"
                             alt="Make Crops Github Page"></a>
-                    <a href="https://github.com/lordgumball20"><img src="img/btn/social_media/Lordgumball20.png"
+                    <a href="https://github.com/makecrops/makecrops.github.io"><img
+                            src="img/btn/social_media/makecrops.png" alt="makecrops.github.io Github repository"></a>
+                    <a href="https://github.com/lordgumball20"><img src="img/btn/social_media/lordgumball20.png"
                             alt="LordGumball's Github Profile"></a>
                 </div>
                 <hr class="dashed">
@@ -190,11 +208,17 @@
 
     <!-- Scripts -->
 
+    <!-- Top Navigator script -->
+    <script src="js/nav.js"></script>
+
     <!-- Side Navigator script -->
     <script src="js/sidenav.js"></script>
 
     <!-- Top button script -->
     <script src="js/topReturn.js"></script>
+
+    <!-- OnScroll function -->
+    <script src="js/onscroll.js"></script>
 
 </body>
 
