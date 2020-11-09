@@ -76,6 +76,11 @@
         <a href="#intro">Intro</a>
         <a href="#aboutPlants">About</a>
         <a href="#plantProgress">Progress</a>
+        <a href="#week1" class="sidebarIndentation">Week 1</a>
+        <a href="#week2" class="sidebarIndentation">Week 2</a>
+        <a href="#week3" class="sidebarIndentation">Week 3</a>
+        <a href="#week4" class="sidebarIndentation">Week 4</a>
+        <a href="#week5" class="sidebarIndentation">Week 5</a>
         <a href="#footer">Footer</a>
     </div>
 
@@ -83,17 +88,18 @@
         <div class="mainNav" id="mainNav">
             <div class="row">
                 <div class="bicolumn">
-                    <button name="btnSidebar" type="button" class="leftbtn burgericon navbtn" value="open" id="sidebario"
-                        onclick="onoff()">
+                    <button name="btnSidebar" type="button" class="leftbtn burgericon navbtn" value="open"
+                        id="sidebario" onclick="onoff()">
                         &#9776;
                     </button>
                 </div>
                 <div class="bicolumn">
-                    <button name="btnHideNav" type="button" class="rightbtn navbtn" id="hideNav" onclick="hidemainNav()"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-compact-up"
-                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z" />
-                    </svg></button>
+                    <button name="btnHideNav" type="button" class="rightbtn navbtn" id="hideNav"
+                        onclick="hidemainNav()"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                            class="bi bi-chevron-compact-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z" />
+                        </svg></button>
                     <button name="btnAbout" type="button" class="rightbtn navbtn"
                         onclick="window.location.href='about.html';">About</button>
                     <button name="btnLearn" type="button" class="rightbtn navbtn"
@@ -106,9 +112,18 @@
             </div>
         </div>
         <div class="shownav" id="shownav">
-            <button name="btnShowNav" type="button" class="rightbtn showbtn" id="showNav" onclick="showmainNav()"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-            </svg></button>
+            <button name="btnShowNav" type="button" class="rightbtn showbtn" id="showNav" onclick="showmainNav()"><svg
+                    width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                </svg></button>
+                <button name="btnShowNav" type="button" class="leftbtn showbtn" id="showNav" onclick="showmainNav()"><svg
+                    width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                </svg></button>
         </div>
     </nav>
 
@@ -124,12 +139,12 @@
             <p>Documentation of our team's represenatative (Simera).</p>
         </section>
         <section class="section3 plantProgress" id="plantProgress">
-            <a href="#plantProgress">
-            </a>
             <hr>
-            <div class="plantContent">
+            <div class="plantContent" id="week1">
                 <div class="plantTitle">
-                    <h2>Week 1</h2>
+                    <a href="#week1">
+                        <h2>Week 1</h2>
+                    </a>
                 </div>
                 <br>
                 <div class="plantBox">
@@ -174,9 +189,11 @@
                 </div>
             </div>
             <hr>
-            <div class="plantContent">
+            <div class="plantContent" id="week2">
                 <div class="plantTitle">
-                    <h2>Week 2</h2>
+                    <a href="#week2">
+                        <h2>Week 2</h2>
+                    </a>
                 </div>
                 <br>
                 <div class="plantBox">
@@ -221,9 +238,11 @@
                 </div>
             </div>
             <hr>
-            <div class="plantContent">
+            <div class="plantContent" id="week3">
                 <div class="plantTitle">
-                    <h2>Week 3</h2>
+                    <a href="#week3">
+                        <h2>Week 3</h2>
+                    </a>
                 </div>
                 <br>
                 <div class="plantBox">
@@ -245,8 +264,8 @@
                                 <div class="plantDesc">
                                     <h2>Brief Conclusion</h2>
                                     <p>Again, there's a few inches growth. A leaf is growing
-                                    so the leaves become 1 more than the past week. The green
-                                    color became a little dark because of the typhoon.
+                                        so the leaves become 1 more than the past week. The green
+                                        color became a little dark because of the typhoon.
                                     </p>
                                 </div>
                                 <div class="plantInfo">
@@ -271,9 +290,11 @@
                 </div>
             </div>
             <hr>
-            <div class="plantContent">
+            <div class="plantContent" id="week4">
                 <div class="plantTitle">
-                    <h2>Week 4</h2>
+                    <a href="#week4">
+                        <h2>Week 4</h2>
+                    </a>
                 </div>
                 <br>
                 <div class="plantBox">
@@ -295,8 +316,8 @@
                                 <div class="plantDesc">
                                     <h2>Brief Conclusion</h2>
                                     <p>There is no changes in plant height and leaves count. The plant
-                                    height is probably affected by the density of the soil. The color has 
-                                    a little change because of the weather (Typhoon Rolly).
+                                        height is probably affected by the density of the soil. The color has
+                                        a little change because of the weather (Typhoon Rolly).
                                     </p>
                                 </div>
                                 <div class="plantInfo">
@@ -321,9 +342,11 @@
                 </div>
             </div>
             <hr>
-            <div class="plantContent">
+            <div class="plantContent" id="week5">
                 <div class="plantTitle">
-                    <h2>Week 5</h2>
+                    <a href="#week5">
+                        <h2>Week 5</h2>
+                    </a>
                 </div>
                 <br>
                 <div class="plantBox">
@@ -345,7 +368,7 @@
                                 <div class="plantDesc">
                                     <h2>Brief Conclusion</h2>
                                     <p>Few inches growth. Another leaf has been born, yey!
-                                    The color came back to it's normal color because the weather is well and calm.
+                                        The color came back to it's normal color because the weather is well and calm.
                                     </p>
                                 </div>
                                 <div class="plantInfo">
@@ -371,7 +394,7 @@
             </div>
         </section>
     </main>
-    
+
     <footer id="footer">
         <div class="row">
             <div class="threecolumn footerColumnDivider">
@@ -381,8 +404,8 @@
                             src="img/btn/social_media/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png"
                             alt="Make Crops Github Page"></a>
                     <a href="https://github.com/makecrops/makecrops.github.io" target="_blank"><img
-                            src="img/btn/social_media/makecrops.png" alt="makecrops.github.io Github repository"></a>
-                    <a href="https://github.com/lordgumball20" target="_blank"><img src="img/btn/social_media/lordgumball20.png"
+                            src="https://avatars2.githubusercontent.com/u/72895727" alt="makecrops.github.io Github repository"></a>
+                    <a href="https://github.com/lordgumball20" target="_blank"><img src="https://avatars0.githubusercontent.com/u/50789492"
                             alt="LordGumball's Github Profile"></a>
                 </div>
                 <hr class="dashed">
@@ -407,7 +430,7 @@
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img
                         alt="Creative Commons License" style="border-width:0"
                         src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Make Crops template by
-                LordGumball20 is licensed
+                <a href="https://github.com/lordgumball20">LordGumball20</a> is licensed
                 under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons
                     Attribution-ShareAlike 4.0 International License</a>.
             </div>
@@ -429,7 +452,7 @@
 
     <!-- Top Navigator script -->
     <script src="js/nav.js"></script>
-    
+
     <!-- Side Navigator script -->
     <script src="js/sidenav.js"></script>
 

@@ -113,6 +113,12 @@
                     <path fill-rule="evenodd"
                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                 </svg></button>
+                <button name="btnShowNav" type="button" class="leftbtn showbtn" id="showNav" onclick="showmainNav()"><svg
+                    width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                </svg></button>
         </div>
     </nav>
 
@@ -126,9 +132,7 @@
             </a>
             <hr>
             <p>Make Crops. This project is to express the beauty of crop production in different ways.</p>
-            <p>Hungry? Grab a crop.</p>
-            <p>Bored? Grab a crop.</p>
-            <p>Upset? Grab a crop.</p>
+            <p>Hungry? Grab a crop. <br>Bored? Grab a crop.<br>Upset? Grab a crop.</p>
         </section>
         <section class="section3 ourSquad" id="ourSquad">
             <a href="#ourSquad">
@@ -137,19 +141,17 @@
             <hr>
             <div class="squadCardsContainer">
                 <div class="squadCard obscure">
-                    <img src="img/protosample/favicon.png">
+                    <img src="img/protosample/favicon.png" style="filter: blur(5px)">
                     <div class="squadCardDesc">
-                        <h3>Ganbaru-kun</h3>
-                        <p>SysAdmin at Imagimation</p>
+                        <h3 id="randStr"></h3>
+                        <p>Who am I? Scroll down in the <a href="#footer">footer</a></p>
                     </div>
                 </div>
                 <div class="squadCard">
                     <img src="img/protosample/ico/kurt.jpg">
                     <div class="squadCardDesc">
                         <h3>Kurt Simera</h3>
-                        <p>I'm fine</p>
-                        <p>I study well</p>
-                        <p>My head hurts</p>
+                        <p>I'm fine<br>I study well<br>My head hurts</p>
                     </div>
                 </div>
                 <div class="squadCard">
@@ -189,8 +191,8 @@
                             src="img/btn/social_media/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png"
                             alt="Make Crops Github Page"></a>
                     <a href="https://github.com/makecrops/makecrops.github.io" target="_blank"><img
-                            src="img/btn/social_media/makecrops.png" alt="makecrops.github.io Github repository"></a>
-                    <a href="https://github.com/lordgumball20" target="_blank"><img src="img/btn/social_media/lordgumball20.png"
+                            src="https://avatars2.githubusercontent.com/u/72895727" alt="makecrops.github.io Github repository"></a>
+                    <a href="https://github.com/lordgumball20" target="_blank"><img src="https://avatars0.githubusercontent.com/u/50789492"
                             alt="LordGumball's Github Profile"></a>
                 </div>
                 <hr class="dashed">
@@ -215,7 +217,7 @@
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img
                         alt="Creative Commons License" style="border-width:0"
                         src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Make Crops template by
-                LordGumball20 is licensed
+                <a href="https://github.com/lordgumball20">LordGumball20</a> is licensed
                 under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons
                     Attribution-ShareAlike 4.0 International License</a>.
             </div>
@@ -247,6 +249,9 @@
 
     <!-- OnScroll function -->
     <script src="js/onscroll.js"></script>
+
+    <!-- Awesome -->
+    <script src="js/rand.js"></script>
 
 </body>
 

@@ -17,6 +17,7 @@ function onoff() {
     if (currentvalue == "open") {
         document.getElementById("sidebario").value = "close";
         openSideNav();
+        hidemainNav()
     } else {
         document.getElementById("sidebario").value = "open";
         closeSideNav();
