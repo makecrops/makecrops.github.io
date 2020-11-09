@@ -4,7 +4,7 @@
 
 body {
     /* background-color: #0077ff; */
-    background: url("../img/protosample/bg/bg1.jpg");
+    background: url("../img/protosample/bg/aboutbg.jpg");
     /* "Leaves" is under a Non-Commercial License of StockVault.net */
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,11 +14,23 @@ body {
 
 /* Content area */
 
+.intro h1{
+    font-size: 11vh;
+    font-style: italic;
+    transition: 1s;
+}
+
+.intro h1:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    cursor: default;
+}
+
 .aboutUs {
     text-align: center;
     background: white;
     overflow: hidden;
-    height: 30vh;
+    height: auto;
     padding: 50px 100px;
 }
 

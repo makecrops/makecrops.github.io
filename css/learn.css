@@ -13,6 +13,23 @@ body {
     /* width: 100%; */
 }
 
+.logo:hover {
+    transform: scale(2);
+    transition: 0.3s;
+}
+
+.intro h1{
+    font-size: 11vh;
+    font-style: italic;
+    transition: 1s;
+}
+
+.intro h1:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    cursor: default;
+}
+
 .aboutToolsContainer {
     background: white;
     overflow: hidden;
@@ -63,4 +80,12 @@ body {
     overflow: hidden;
     height: auto;
     padding: 50px 100px;
+}
+
+.refLearn {
+    margin-top: 90px;
+}
+
+.refLearn p a:hover {
+    color: rgb(58, 194, 41);
 }

@@ -14,18 +14,35 @@ body {
 
 /* Content area */
 
+.intro h1{
+    font-size: 11vh;
+    font-style: italic;
+    transition: 1s;
+}
+
+.intro h1:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    cursor: default;
+}
+
 .aboutPlants {
+    text-align: center;
     background: white;
     overflow: hidden;
     height: 30vh;
-    padding: 50px 100px;
+    padding: 50px 100px 10px 100px;
+}
+
+.aboutPlants p {
+    font-size: large;
 }
 
 .plantProgress {
     background: white;
     overflow: hidden;
-    height: 150vh;
-    padding: 50px 100px;
+    height: auto;
+    padding: 5px 100px 50px 100px;
 }
 
 .plantContent {

@@ -34,7 +34,6 @@
 .navbtn:hover {
     border: solid;
     border-color: white;
-    cursor: crosshair;
 }
 
 .navbtn:active {
