@@ -42,6 +42,6 @@
 
 }
 
-#main, #nav, #footer {
+#main, #footer {
     transition: margin-left 0.5s;
 }

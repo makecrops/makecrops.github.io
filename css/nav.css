@@ -11,6 +11,7 @@
     position: fixed;
     /* position: -webkit-sticky; */
     padding: 2% 5%;
+    transition: 0.5s;
 }
 
 .mainNav {

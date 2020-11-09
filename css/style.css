@@ -68,3 +68,7 @@ main a:hover {
     background: rgba(80, 80, 80, 0.5);
     color: white;
 }
+
+.obscure {
+    filter: blur(10px);
+}
