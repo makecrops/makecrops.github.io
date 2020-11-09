@@ -1,0 +1,69 @@
+/* Plants Content Styles */
+
+/* Head */
+
+body {
+    /* background-color: #0077ff; */
+    background: url("../img/protosample/bg/bg1.jpg");
+    /* "Leaves" is under a Non-Commercial License of StockVault.net */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Content area */
+
+.aboutUs {
+    text-align: center;
+    background: white;
+    overflow: hidden;
+    height: 30vh;
+    padding: 50px 100px;
+}
+
+.ourSquad {
+    text-align: center;
+    background: white;
+    overflow: hidden;
+    height: auto;
+    padding: 50px 100px;
+}
+
+.squadCardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.squadCard {
+    background-color: white;
+    height: 400px;
+    width: 25%;
+    display: inline-block;
+    margin: 1%;
+    border: solid;
+    border-color: #004000;
+    border-radius: 10px;
+}
+
+.squadCard:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.squadCard img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.squadCardDesc {
+    text-align: center;
+    padding: 5%;
+    margin: 0;
+}
+
+.squadCardDesc p, .squadCardDesc h3 {
+    text-align: center;
+    margin: 0;
+}

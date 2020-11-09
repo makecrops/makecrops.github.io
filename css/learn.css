@@ -13,7 +13,7 @@ body {
     /* width: 100%; */
 }
 
-.aboutTools {
+.aboutToolsContainer {
     background: white;
     overflow: hidden;
     height: auto;
@@ -24,13 +24,6 @@ body {
     text-align: center;
 }
 
-.descTerms {
-    background: white;
-    overflow: hidden;
-    height: auto;
-    padding: 5px 100px 50px 100px;
-}
-
 .descTerms br{
     display: block;
     content: "";
@@ -38,10 +31,9 @@ body {
 }
 
 .contentBreak {
-    background:rgba(0, 255, 149, 0.164);
+    background:white;
     overflow: hidden;
-    height: 20vh;
-    padding: 50px 100px;
+    padding: 10px 50px;
 }
 
 .aboutHandTools {

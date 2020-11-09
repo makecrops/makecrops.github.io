@@ -9,8 +9,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* background-attachment: fixed; */
-    /* width: 100%; */
+    background-attachment: fixed;
 }
 
 /* Content area */

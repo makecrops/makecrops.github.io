@@ -9,22 +9,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* background-attachment: fixed; */
-    /* width: 100%; */
-}
-
-/* 20/80 unequal column */
-
-.unequalcolumn {
-    float: left;
-}
-
-.unequalcolumnleft {
-    width: 20%;
-}
-
-.unequalcolumnright {
-    width: 80%;
+    background-attachment: fixed;
 }
 
 /* Content area */
@@ -44,9 +29,9 @@ body {
 }
 
 .plantContent {
-    height: 40vh;
+    height: 80vh;
     width: 100%;
-    padding: 25px;
+    padding: 15px;
     background: #008800;
     overflow: hidden;
     border: none;
@@ -57,8 +42,18 @@ body {
     text-align: center;
 }
 
+.plantTitle {
+    height: 20%;
+    background: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
 .plantBox {
-    height: 100%;
+    height: 80%;
     background: #005300;
     border: none;
     border-radius: 20px;
@@ -79,26 +74,29 @@ body {
 
 .plantImg {
     height: 70%;
+    padding: 12%;
     border: none;
     border-radius: 10px 10px 0 0;
     margin: 2.5%;
     text-align: center;
-    background:  #004000;
+    background: #004000;
 }
 
-/* .plantImg img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-} */
+.plantImg img {
+    width: 100px;
+    height: 100px;
+    border: solid;
+    border-radius: 100%;
+}
+
+.plantImg img:hover {
+    transform: scale(2);
+    border-radius: 10%;
+    transition: 0.3s;
+}
 
 .plantTxT {
-    height: 20%;
+    height: 25%;
     border: none;
     border-radius: 0 0 10px 10px;
     margin: 2.5%;
@@ -106,9 +104,49 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background:  #004000;
+    background: #004000;
 }
 
 .plantTxT p {
     margin: 0;
+}
+
+.plantDesc {
+    color: #004000;
+    background: aliceblue;
+    width: auto;
+    height: 47%;
+    margin: 1%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.plantInfo {
+    color: #004000;
+    background: aliceblue;
+    width: auto;
+    height: 47%;
+    margin: 1%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.plantInfoBox {
+    background: aliceblue;
+    border: solid;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.plantInfoBox:hover {
+    border: solid;
+    border-color: #004000;
+    transform: scale(1.2);
+    transition: 0.3s;
 }
