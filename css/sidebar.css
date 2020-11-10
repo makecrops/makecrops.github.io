@@ -45,3 +45,8 @@
 #main, #footer {
     transition: margin-left 0.5s;
 }
+
+.sidebarIndentation {
+    margin-left: 10%;
+    font-size: 15px !important;
+}
