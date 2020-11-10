@@ -34,6 +34,10 @@
 .navbtn:hover {
     border: solid;
     border-color: white;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
 }
 
 .navbtn:active {
