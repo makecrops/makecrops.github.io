@@ -1,0 +1,6 @@
+@media screen and (max-width: 1366px) {
+    .plantImg img {
+        width: 75px;
+        height: 75px;
+    }
+}
