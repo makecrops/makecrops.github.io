@@ -80,3 +80,13 @@ body {
     text-align: center;
     margin: 0;
 }
+
+.ganbaru h3:hover span {
+    display: none;
+    transition: 0.3s;
+}
+
+.ganbaru h3:hover::before {
+    content: "Haniel Pagkaliwangan\A";
+    transition: 0.3s;
+}
